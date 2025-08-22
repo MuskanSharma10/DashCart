@@ -1,0 +1,114 @@
+/* Main container */
+.product-list {
+  width: 80%;
+  margin: 50px auto 100px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+/* Heading */
+.product-list h3 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Search box */
+.search-product-box {
+  width: 60%;
+  display: block;
+  margin: 0 auto 30px auto;
+  padding: 10px 16px;
+  font-size: 16px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+/* Table header */
+.product-list ul:first-of-type {
+  background-color: #edeaff;
+  border-radius: 10px;
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: #444;
+  border: 1px solid #ccc;
+}
+
+/* Table row */
+.product-list ul:not(:first-of-type) {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  transition: background 0.3s;
+}
+
+.product-list ul:not(:first-of-type):hover {
+  background-color: #f9f9f9;
+}
+
+/* List items (cells) */
+.product-list li {
+  width: 20%;
+  text-align: center;
+  list-style: none;
+  padding: 8px 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Button styles */
+.product-list button {
+  padding: 6px 12px;
+  margin-right: 10px;
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.product-list button:hover {
+  background-color: #e60000;
+}
+
+/* Link style (Update) */
+.product-list a {
+  padding: 6px 12px;
+  border: 2px solid #8b3dff;
+  color: #8b3dff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.product-list a:hover {
+  background-color: #8b3dff;
+  color: white;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: purple;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 1000;
+}

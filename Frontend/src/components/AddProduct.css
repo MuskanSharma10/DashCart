@@ -1,0 +1,133 @@
+/* Fullscreen dark gradient background */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Centering the form box */
+
+/* Centering the form box without transform */
+.product-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+
+
+
+/* Frosted glass product form */
+.product {
+  width: 90%;
+  max-width: 450px;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.8s ease-in-out;
+}
+
+/* Form heading */
+.product h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+  animation: fadeIn 0.9s ease;
+}
+
+/* Input styles */
+.inputBox {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #444;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #fff;
+  transition: all 0.3s ease;
+  animation: fadeIn 0.9s ease;
+}
+
+.inputBox:focus {
+  background: rgba(255, 255, 255, 0.15);
+  outline: none;
+  box-shadow: 0 0 8px #3cefff;
+}
+
+/* Placeholder text */
+.inputBox::placeholder {
+  color: #ccc;
+  opacity: 0.8;
+}
+
+/* Error message */
+.invalid-input {
+  color: #ff6b6b;
+  font-size: 13px;
+  margin-top: -8px;
+  margin-bottom: 10px;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Submit button */
+.appButton {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(to right, #1f4037, #99f2c8);
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 1s ease;
+}
+
+.appButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(153, 242, 200, 0.4);
+}
+
+/* Green success popup */
+.success-popup {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  padding: 12px 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+  animation: fadeIn 0.5s ease;
+}
+
+/* Animations */
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
